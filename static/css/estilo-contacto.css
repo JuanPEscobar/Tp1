@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  image-rendering: optimizeQuality;
+  color: aliceblue;
+  background: #283048;
+  margin-left: 10vw;
+  margin-right: 5vw;
+}
+ul {
+  font-size: x-large;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: vw auto;
+  display: grid;
+  grid-gap: 1vw;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+}
+
+.contenedor .encabezado {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.contenedor .navigation {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.contenedor .cont {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  height: auto;
+  /* grid-column: span 2;
+  row-gap: auto; */
+}
+
+.contenedor .pie {
+  grid-column: span 4;
+}
+
+.pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: start;
+  color: aliceblue;
+}
+.encabezado {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* position: fixed; */
+  left: 0;
+  top: 0;
+  right: 0;
+}
+.nav-enlace {
+  display: inline-block;
+  padding: 20px 30px;
+  color: aliceblue;
+  font-size: 1vw;
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.nav-enlace:hover {
+  background-color: #283048;
+  padding: 30px;
+}
+
+.nav-enlace:active {
+  background-color: aliceblue;
+  color: #283048;
+}
+
+nav {
+  background-image: url(/images/fotoflyer1nueva.png);
+  background-repeat: repeat-x;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-boton {
+  background-color: #9d99a3;
+  color: #283048;
+  padding: 10 px 0;
+  border: 2px solid #aeb6bf;
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .contenedor {
+    width: 90%;
+    margin: 0.2vw auto;
+    grid-gap: 0.1vw;
+  }
+  .contenedor .navigation {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: 65%;
+  }
+  .contenedor .cont {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    width: -25%;
+  }
+  nav {
+    flex-direction: column;
+    background-size: cover;
+    background-image: url(/images/Garage.jpg);
+  }
+
+  nav-enlace {
+    color: aliceblue;
+    padding: 5px 7.5px;
+    font-size: 1.5vw;
+  }
+  .nav-boton {
+    display: inline-block;
+    color: #283048;
+    background-color: aliceblue;
+  }
+  .desaparece {
+    display: none;
+  }
+  .nav-enlace:hover {
+    color: #283048;
+    background-color: #9d99a3;
+    padding: 10px;
+  }
+  .nav-enlace:active {
+    background-color: #283048;
+    color: aliceblue;
+  }
+  /* .agregado1 p,
+  .agregado p {
+    text-align: top;
+    font-size: medium;
+  } */
+
+  /* .contenedor .sidebar {
+    font-size: medium;
+  }
+  ul {
+    font-size: medium;
+} */
+
+@media only screen and (max-width: 480px) {
+  .contenedor {
+    width: 90%;
+    margin: 0.2vw auto;
+    grid-gap: 0.1vw;
+  }
+  .contenedor .navigation {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 65%;
+  }
+  /* .contenedor .carrusel-completo {
+    /* visibility: hidden; */
+    /* display: none;
+    background-image: url(/images/Madera.jpg);
+    grid-column-start: 2;
+    grid-column-end: -1;
+    width: -25%;
+  } */
+
+  /* .celular {
+    display: block;
+    font-size: small;
+    text-align: justify;
+    background-image: url(/images/Madera.jpg);
+  } */
+
+  /* .sidebar {
+    visibility: hidden;
+  }
+
+  ul {
+    list-style: circle;
+  } */
+  nav {
+    flex-direction: column;
+    /* background-size: cover;
+    background-image: url(/images/Garage.jpg); */
+  }
+
+  nav-enlace {
+    color: aliceblue;
+    padding: 5px 7.5px;
+    font-size: 1.5vw;
+  }
+  .nav-boton {
+    display: inline-block;
+    color: #283048;
+    background-color: aliceblue;
+  }
+  .desaparece {
+    display: none;
+  }
+  .nav-enlace:hover {
+    color: #283048;
+    background-color: #9d99a3;
+    padding: 10px;
+  }
+  .nav-enlace:active {
+    background-color: #283048;
+    color: aliceblue;
+  }
+
+  .form,
+  .form-sec {
+width: 80%;
+  }
+  /* .agregado1 p {
+    text-align: top;
+    font-size: small;
+  } */
+
+  /* .contenedor .sidebar {
+    font-size: small;
+  }
+}
+.somos {
+  text-align: justify;
+} */

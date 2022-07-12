@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/Logo1.ico') }}" />
+    <link rel="stylesheet" href= "{{url_for('static', filename='css/estilo-contacto.css')}}" />
+
+
+
+    <title>Contacto HidrolavadoIntegral</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <header class="encabezado">
+        <a href="/">
+          <img
+            src="static/images/Logo1-removebg-preview.png"
+            width="50%"
+            height="50%"
+            alt="Logo de HidrolavadoIntegral que va al Inicio"
+          />
+        </a>
+        <h1 style="font-size: 5vw">Hidrolavado Integral</h1>
+      </header>
+      <nav class="navigation">
+        <button class="nav-boton" onclick="accion()">Menu</button>
+        <a
+          href="/"
+          class="nav-enlace desaparece"
+          style="font-size: 2vw"
+          >Inicio</a
+        >
+        <a
+          href="/Servicios"
+          class="nav-enlace desaparece"
+          style="font-size: 2vw"
+          >Servicios</a
+        >
+
+        <a
+          href="/Quienes_somos"
+          class="nav-enlace desaparece"
+          style="font-size: 2vw"
+          >Quienes Somos</a
+        >
+        <a
+          href="/Contacto"
+          class="nav-enlace desaparece"
+          style="font-size: 2vw"
+        >
+          Contacto</a
+        >
+        <!-- <i> class="fa-solid fa-toolbox" </i> -->
+        <!-- <i> class="fa-solid fa-hammer" </i> -->
+        <!-- <i> class="fa-solid fa-people-group"></i> -->
+        <!-- <i> class="fa-solid fa-address-card"></i> -->
+      </nav>
+      <main class="cont">
+        <div>
+          <section>
+            <article>
+              <br />
+              <h1>Formulario de Contacto</h1>
+              <br />
+              <form class="form" method="post" action="/store" id="form" enctype="multipart/form-data">
+                <fieldset>
+                  <legend>Datos Personales</legend>
+                  <br />
+                  <label class="dato1" for="nombre"> Nombre </label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    maxlength="12"
+                    size="15"
+                    placeholder="Maria"
+                  />
+                  <br />
+                  <label class="dato2" for="apellido"> Apellido </label>
+                  <input
+                    type="text"
+                    id="apellido"
+                    name="apellido"
+                    maxlength="12"
+                    size="15"
+                    placeholder="Perez"
+                  />
+                  <br /><br />
+                  <label class="dato3" for="telefono"> Teléfono-Celular </label>
+                  <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    maxlength="15"
+                    size="15"
+                    placeholder="1145656746"
+                    pattern="[0-9]{2,3}[0-9]{1}[0-9]{7}"
+                  /><br />
+                  <label class="dato4" for="email"> E-mail </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    maxlength="30"
+                    size="25"
+                    placeholder="mperez@mperez.com"
+                  /><br />
+
+                  <!-- <small> Formato: 1145656746</small> <br /> -->
+
+                  <br /><br />
+                  <label for="zona"> Zona de Residencia </label>
+                  <input type="radio" name="zona" value="1" checked /> CABA
+                  <input type="radio" name="zona" value="2" />Zona Norte de Bs
+                  As <input type="radio" name="zona" value="3" />Zona Oeste de
+                  Bs As <input type="radio" name="zona" value="4" />Zona Sur de
+                  Bs As
+                </fieldset>
+                <br />
+                <fieldset class="form-sec">
+                  <legend>Tema por el que quiere ser contactado</legend>
+                  <label for="comentarios"> </label> <br />
+                  <textarea
+                    name="comentarios"
+                    id="comentarios"
+                    name="comentarios"
+                    cols="35"
+                    rows="7"
+                    placeholder="Describa su consulta y agregue una foto de ser posible"
+                  ></textarea>
+
+                  <label for="adjunto"> Adjuntar foto </label>
+                  <input type="file" name="foto" id="file" />
+                </fieldset>
+                <br />
+                <br />
+                <br />
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Borrar" />
+                <p class="warnings" id="warnings"></p>
+              </form>
+            </article>
+          </section>
+        </div>
+      </main>
+      <footer class="pie">
+        <div class="pie1">
+          <h4>Hidrolavado Integral</h4>
+          <div class="mini-nav"><a href="index.html">Inicio</a></div>
+          <div class="mini-nav"><a href="Servicios.html">Servicios</a></div>
+          <div class="mini-nav">
+            <a href="/Quienes_somos">Quienes Somos</a>
+          </div>
+          <div class="mini-nav"><a href="/Contacto">Contacto</a></div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      function accion() {
+        var ancla = document.getElementsByClassName("nav-enlace");
+        for (var i = 0; i < ancla.length; i++) {
+          ancla[i].classList.toggle("desaparece");
+        }
+      }
+    </script>
+    <script src="JS/formulario.js"></script>
+  </body>
+</html>

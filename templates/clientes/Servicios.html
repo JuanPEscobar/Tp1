@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/Logo1.ico') }}" />
+    <link rel="stylesheet" href= "{{url_for('static', filename='css/estilocongird.css')}}" />
+    <link rel="stylesheet" href= "{{url_for('static', filename='css/carrusel.css')}}" />
+    <title>Servicios HidrolavadoIntegral</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <header class="encabezado">
+        <a href="/">
+          <img
+            src="static/images/Logo1-removebg-preview.png"
+            width="50%"
+            height="50%"
+            alt="Logo de HidrolavadoIntegral que va al Inicio"
+          />
+        </a>
+        <h1 style="font-size: 5vw">Hidrolavado Integral</h1>
+      </header>
+      <nav class="navigation">
+        <button class="nav-boton" onclick="accion()">Menu</button>
+        <a
+          href="/"
+          class="nav-enlace desaparece"
+          style="font-size: 2vw"
+          >Inicio</a
+        >
+        <a
+          href="/Servicios"
+          class="nav-enlace desaparece"
+          style="font-size: 2vw"
+          >Servicios</a
+        >
+
+        <a
+          href="/Quienes_somos"
+          class="nav-enlace desaparece"
+          style="font-size: 2vw"
+          >Quienes Somos</a
+        >
+        <a
+          href="/Contacto"
+          class="nav-enlace desaparece"
+          style="font-size: 2vw"
+        >
+          Contacto</a
+        >
+        <!-- <i> class="fa-solid fa-toolbox" </i> -->
+        <!-- <i> class="fa-solid fa-hammer" </i> -->
+        <!-- <i> class="fa-solid fa-people-group"></i> -->
+        <!-- <i> class="fa-solid fa-address-card"></i> -->
+      </nav>
+      <main class="contenido">
+        <div>
+          <section class="columna">
+            <article class="carrusel-completo">
+              <div class="carrusel">
+                <div class="carrusel-todos">
+                  <div class="carrusel-item">
+                    <p class="letra-t">Hidrolavado</p>
+                    <img src="static/images/Hidro1.png" />
+                    <p>Hidrolavado a alta presión con agua fría o caliente</p>
+                  </div>
+                  <div class="carrusel-item">
+                    <p class="letra-t">Instalaciones</p>
+                    <img src="static/images/Gas1.png" />
+                    <p>Instalaciones de Gas, Eléctricas y Sanitarias</p>
+                  </div>
+                  <div class="carrusel-item">
+                    <p class="letra-t">Pintura</p>
+                    <img src="static/images/Pintura1.png" />
+                    <p>
+                      Aplicado de pinturas, latex, sintéticos, epoxídicos,
+                      elastoméricos, etc. Trabajos en altura, silleteros e
+                      interiores
+                    </p>
+                  </div>
+                  <div class="carrusel-item">
+                    <p class="letra-t">Final de Obra</p>
+                    <img src="static/images/Final_Obra1.png" />
+                    <p>Limpieza de pequeñas y grandes superficies</p>
+                  </div>
+                  <div class="carrusel-item">
+                    <p class="letra-t">Durlock</p>
+                    <img src="static/images/Durlock1.png" />
+                    <p>
+                      Servicio de armado, tabicado, emplacado y tomado de juntas
+                      por medio del sistema de construcción en seco
+                    </p>
+                  </div>
+                  <div class="carrusel-item">
+                    <p class="letra-t">Remodelaciones</p>
+                    <img src="static/images/remodelaciones1.png" />
+                    <p>
+                      Reformas, ampliaciones y modificaciones de ambientes de
+                      todo tipo
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <div class="celular">
+              <ul>
+                <li>
+                  Limpieza de fachadas, pisos, tejas, piletas, flotas
+                  automotores, embarcaciones, etc.
+                </li>
+                <br />
+                <li>
+                  Armado, emplacado, tomado de juntas masillado y pintado de
+                  placas de en seco.
+                </li>
+                <br />
+                <li>
+                  Impermeabilizado de frentes, ladrillos, revestimientos,
+                  mampostería, etc.
+                </li>
+                <br />
+                <p>Trabajos en altura</p>
+                <p>Todos los trabajos con los seguros correspondientes</p>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <aside class="sidebar">
+        <ul>
+          <li>
+            Limpieza de fachadas, pisos, tejas, piletas, flotas automotores,
+            embarcaciones, etc.
+          </li>
+          <br />
+          <li>
+            Armado, emplacado, tomado de juntas masillado y pintado de placas de
+            en seco.
+          </li>
+          <br />
+          <li>
+            Impermeabilizado de frentes, ladrillos, revestimientos, mampostería,
+            etc.
+          </li>
+          <br />
+          <p>Trabajos en altura</p>
+          <p>Todos los trabajos con los seguros correspondientes</p>
+        </ul>
+      </aside>
+      <div class="agregado1">
+        <p>Su consulta no molesta</p>
+        <br />
+        <br />
+        <p>Solicite su presupuesto al: +54 9 1145656746</p>
+        <br /><br />
+        <p>
+          Solicite su presupuesto por email:
+          <br />
+          <br /><a class="mail" href="mailto:hidrolavadointegral@gmail.com"
+            >hidrolavadointegral@gmail.com</a
+          >
+        </p>
+        <br />
+        <br /><br /><br /><br /><br /><br />
+      </div>
+      <!-- <div class="agregado2">
+        <h3>AGREGADO 2</h3>
+      </div> -->
+      <footer class="pie">
+        <div class="pie1">
+          <h4>Hidrolavado Integral</h4>
+          <div class="mini-nav"><a href="/">Inicio</a></div>
+          <div class="mini-nav"><a href="/Servicios">Servicios</a></div>
+          <div class="mini-nav">
+            <a href="/Quienes_somos">Quienes Somos</a>
+          </div>
+          <div class="mini-nav"><a href="/Contacto">Contacto</a></div>
+        </div>
+        <!-- <div class="pie2">hola2</div> -->
+        <!-- <div class="pie3"></div> -->
+        <!-- <h3>FOOTER</h3> -->
+      </footer>
+    </div>
+
+    <script>
+      function accion() {
+        var ancla = document.getElementsByClassName("nav-enlace");
+        for (var i = 0; i < ancla.length; i++) {
+          ancla[i].classList.toggle("desaparece");
+        }
+      }
+    </script>
+    <script src="/JS/carrusel.js"></script>
+  </body>
+</html>
